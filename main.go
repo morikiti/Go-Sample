@@ -40,7 +40,7 @@ func dbInsert(name, content string) {
 	db.Create(&Bss{Name: name, Content: content})
 }
 
-//DB更新
+//DB更新 fd
 func dbUpdate(id int, Text string) {
 	db := gormConnect()
 	var bss Bss
